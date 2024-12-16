@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+# ![Mustang Logo](./assets/logo.png) **Mustang Showroom Customization Platform**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚗 **"Unleashing Mustang Power, One Customization at a Time"** 🚗
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 **Table of Contents**
+1. [Project Description](#section-1---project-description)
+2. [Overview](#section-2---overview)
+3. [System Architecture](#section-3---system-architecture)
+4. [Data Dictionary](#section-4---data-dictionary)
+5. [Data Design](#section-5---data-design)
+6. [User Interface Design](#section-6---user-interface-design)
+7. [Testing](#section-7---testing)
+8. [Monitoring](#section-8---monitoring)
+9. [Other Interfaces](#section-9---other-interfaces)
+10. [Extra Design Features](#section-10---extra-design-features)
+11. [References](#section-11---references)
+12. [Glossary](#section-12---glossary)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Section 1 - Project Description
 
-### `npm test`
+### 🔧 **1.1 Project**
+**Project Name:** Mustang Showroom Customization Platform
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛠️ **1.2 Description**
+The Mustang Showroom Customization Platform is an innovative web-based application that enables users to explore, customize, and visualize a 3D model of a Mustang car. Key features include:
+- Dynamic customization of **colors**, **alloy wheels**, **engine types**, and other features.
+- A visually engaging **3D viewer** powered by React and Three.js.
+- Automatic **PDF invoice generation** with detailed pricing for selected features.
 
-### `npm run build`
+### 📜 **1.3 Revision History**
+| **Date**       | **Comment**                            | **Author**          |
+|-----------------|----------------------------------------|---------------------|
+| 2024-12-01      | Initial draft                         | Rishabh Karnani     |
+| 2024-12-03      | Added features and testing details     | Rishabh Karnani     |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Section 2 - Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🎯 **2.1 Purpose**
+The purpose of this application is to revolutionize the car customization experience by allowing users to interact dynamically with a 3D model of the Mustang. It targets:
+- **Car Enthusiasts** looking to experiment with configurations.
+- **Dealerships** offering visualization options for clients.
+- **Buyers** exploring customized pricing estimates.
 
-### `npm run eject`
+### 📌 **2.2 Scope**
+- Real-time customization powered by **React** and **Three.js**.
+- High-definition visuals with **HDR lighting**.
+- Seamless **PDF invoice generation** summarizing user selections and pricing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📝 **2.3 Requirements**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 🔧 **2.3.1 Functional Requirements**
+- Users can customize car features such as **color**, **wheels**, and **engine types**.
+- Generate a **detailed PDF invoice** for selected features.
+- Provide real-time 3D visualization of the car model.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 🌟 **2.3.2 Non-Functional Requirements**
+- **Performance:** Load customizations within **2 seconds**.
+- **Reliability:** Maintain a system uptime of **99.9%**.
+- **Scalability:** Support up to **100 concurrent users**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 🖥️ **2.3.3 Technical Requirements**
+- **Hardware:** Desktop/laptop with **8GB RAM** or more.
+- **Software:** Developed using **React**, **Three.js**, and **jsPDF**.
 
-## Learn More
+#### 🔒 **2.3.4 Security Requirements**
+- PDF generation must be secure and avoid exposing sensitive data.
+- All data transfers must be encrypted via **HTTPS**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 📅 **2.3.5 Estimates**
+| **#** | **Description**                            | **Hrs. Est.** |
+|-------|--------------------------------------------|---------------|
+| 1     | Design and Implementation of 3D Viewer     | 20 hrs        |
+| 2     | Customization Panel Development            | 15 hrs        |
+| 3     | PDF Invoice Generator                      | 10 hrs        |
+| 4     | Testing and Bug Fixes                      | 5 hrs         |
+| **TOTAL** |                                        | **50 hrs**    |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 🔗 **2.3.6 Traceability Matrix**
+| **SRS Requirement** | **SDD Module**               |
+|----------------------|-----------------------------|
+| Req 1               | 3D Viewer Module            |
+| Req 2               | Customization Panel         |
+| Req 3               | PDF Invoice Generator       |
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Section 3 - System Architecture
 
-### Analyzing the Bundle Size
+### 🏗️ **3.1 Overview**
+The system architecture consists of:
+- **3D Viewer Module:** Renders the Mustang in a dynamic 3D environment.
+- **Customization Panel:** Provides options for modifying features.
+- **Invoice Generator:** Creates PDF estimates based on selected features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📊 **3.2 Architectural Diagram**
+![Architecture Diagram](./assets/architecture_diagram.png)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Section 4 - Data Dictionary
 
-### Advanced Configuration
+| **Table**   | **Field**       | **Notes**                         | **Type**    |
+|-------------|-----------------|-----------------------------------|-------------|
+| CarFeatures | ID              | Unique Identifier                | INTEGER     |
+| CarFeatures | Name            | Feature Name (e.g., Color)       | VARCHAR     |
+| CarFeatures | Value           | Selected Value                   | VARCHAR     |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Section 5 - Data Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 🗂️ **5.1 Persistent/Static Data**
+**Entities:**
+1. **User Preferences**
+   - Attributes: UserID (PK), Color, WheelType, EngineType
+   - Relationships: One-to-One with Invoice.
+2. **Invoice**
+   - Attributes: InvoiceID (PK), UserID (FK), TotalCost
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Section 6 - User Interface Design
+
+### 🎨 **6.1 Overview**
+- **3D Viewer Panel:** Displays the Mustang in a 3D interactive environment.
+- **Customization Panel:** Allows users to modify car attributes.
+
+### 🖼️ **6.2 Mockups**
+![UI Mockup](./assets/ui_mockup.png)
+
+---
+
+## Section 7 - Testing
+
+### ✅ **7.1 Test Plan**
+| **Test Case ID** | **Input**          | **Expected Output**                    | **Actual Output** |
+|------------------|--------------------|----------------------------------------|-------------------|
+| TC-001           | Select "Red" Color | Car changes to red                     | Pass              |
+| TC-002           | Select "Alloy A"   | Wheels update to "Alloy A"             | Pass              |
+| TC-003           | Generate Invoice   | PDF with correct details is downloaded | Pass              |
+
+---
+
+## Section 8 - Monitoring
+
+### 📊 **Key Metrics**
+- **Performance Metrics:** Average response time under 1 second.
+- **Error Metrics:** Logs for rendering or PDF generation issues.
+- **Availability Metrics:** Uptime monitored via browser-based tools.
+
+---
+
+## Section 9 - Other Interfaces
+
+### 🌐 **9.1 External Interfaces**
+- **Browser:** For accessing the React application.
+- **File System:** For saving generated PDFs.
+
+---
+
+## Section 10 - Extra Design Features
+
+### ✨ **Special Features**
+- **HDR Lighting:** Adds realistic rendering to the Mustang model.
+- **Dynamic Pricing:** Automatically adjusts invoice totals based on selected options.
+
+---
+
+## Section 11 - References
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Three.js Documentation](https://threejs.org/docs/index.html)
+- [jsPDF Documentation](https://github.com/parallax/jsPDF)
+
+---
+
+## Section 12 - Glossary
+
+| **Term**           | **Definition**                                      |
+|---------------------|----------------------------------------------------|
+| **HDR**            | High Dynamic Range                                 |
+| **3D Model Viewer**| Component for displaying 3D assets                 |
+| **PDF Invoice**    | Document summarizing customization and pricing     |
+
+---
+
+### ✍️ **Author**: *Rishabh Karnani*
