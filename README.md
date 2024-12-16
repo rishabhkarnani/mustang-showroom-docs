@@ -156,8 +156,8 @@ The interface consists of two main sections:
 ---
 
 ## Section 11 - References
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [Three.js Documentation](https://threejs.org/docs/index.html)
+- [React Documentation](https://legacy.reactjs.org/docs/getting-started.html)
+- [Three.js Documentation](https://threejs.org)
 - [jsPDF Documentation](https://github.com/parallax/jsPDF)
 
 ---
@@ -176,11 +176,3 @@ The interface consists of two main sections:
 
 ---
 
-### **Final Steps**:
-1. **Upload all screenshots and docs to your GitHub repository's `docs/` folder.**
-2. Verify that all file paths (e.g., `./docs/architecture_diagram.jpg`) are correct.
-3. Commit and push the changes:
-   ```bash
-   git add docs/*
-   git commit -m "Added all screenshots, diagrams, and documentation updates"
-   git push origin main
