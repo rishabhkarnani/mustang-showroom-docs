@@ -44,51 +44,23 @@ The Mustang Showroom Customization Platform is an innovative web-based applicati
 ## Section 2 - Overview
 
 ### 🎯 **2.1 Purpose**
-The purpose of this application is to revolutionize the car customization experience by allowing users to interact dynamically with a 3D model of the Mustang. It targets:
-- **Car Enthusiasts** looking to experiment with configurations.
-- **Dealerships** offering visualization options for clients.
-- **Buyers** exploring customized pricing estimates.
+The purpose of this application is to revolutionize the car customization experience by allowing users to interact dynamically with a 3D model of the Mustang.
 
 ### 📌 **2.2 Scope**
 - Real-time customization powered by **React** and **Three.js**.
 - High-definition visuals with **HDR lighting**.
 - Seamless **PDF invoice generation** summarizing user selections and pricing.
 
-### 📝 **2.3 Requirements**
-
-#### 🔧 **2.3.1 Functional Requirements**
-- Users can customize car features such as **color**, **wheels**, and **engine types**.
-- Generate a **detailed PDF invoice** for selected features.
-- Provide real-time 3D visualization of the car model.
-
-#### 🌟 **2.3.2 Non-Functional Requirements**
-- **Performance:** Load customizations within **2 seconds**.
-- **Reliability:** Maintain a system uptime of **99.9%**.
-- **Scalability:** Support up to **100 concurrent users**.
-
-#### 🖥️ **2.3.3 Technical Requirements**
-- **Hardware:** Desktop/laptop with **8GB RAM** or more.
-- **Software:** Developed using **React**, **Three.js**, and **jsPDF**.
-
-#### 🔒 **2.3.4 Security Requirements**
-- PDF generation must be secure and avoid exposing sensitive data.
-- All data transfers must be encrypted via **HTTPS**.
-
-#### 📅 **2.3.5 Estimates**
-| **#** | **Description**                            | **Hrs. Est.** |
-|-------|--------------------------------------------|---------------|
-| 1     | Design and Implementation of 3D Viewer     | 20 hrs        |
-| 2     | Customization Panel Development            | 15 hrs        |
-| 3     | PDF Invoice Generator                      | 10 hrs        |
-| 4     | Testing and Bug Fixes                      | 5 hrs         |
-| **TOTAL** |                                        | **50 hrs**    |
-
-#### 🔗 **2.3.6 Traceability Matrix**
-| **SRS Requirement** | **SDD Module**               |
-|----------------------|-----------------------------|
-| Req 1               | 3D Viewer Module            |
-| Req 2               | Customization Panel         |
-| Req 3               | PDF Invoice Generator       |
+### 📷 **Snapshots**
+| **Description**                      | **Screenshot**                                     |
+|--------------------------------------|--------------------------------------------------|
+| Architecture Diagram                 | ![Architecture](docs/architecture_diagram.jpg)   |
+| Running Application                  | ![Running App](docs/running_application.jpg)     |
+| GitHub Repository Page               | ![GitHub Repo](docs/github_repository_page.jpg)  |
+| Test Case 1                          | ![Test Case 1](docs/tc1.jpg)                     |
+| Test Case 2                          | ![Test Case 2](docs/tc2.jpg)                     |
+| Test Case 3                          | ![Test Case 3](docs/tc3.jpg)                     |
+| Generated PDF File                   | ![PDF File](docs/generated_pdf_file.jpg)         |
 
 ---
 
@@ -101,7 +73,7 @@ The system architecture consists of:
 - **Invoice Generator:** Creates PDF estimates based on selected features.
 
 ### 📊 **3.2 Architectural Diagram**
-![Architecture Diagram](./assets/architecture_diagram.png)
+![Architecture Diagram](./docs/architecture_diagram.jpg)
 
 ---
 
@@ -130,11 +102,14 @@ The system architecture consists of:
 ## Section 6 - User Interface Design
 
 ### 🎨 **6.1 Overview**
-- **3D Viewer Panel:** Displays the Mustang in a 3D interactive environment.
-- **Customization Panel:** Allows users to modify car attributes.
+The interface consists of two main sections:
+1. **3D Viewer Panel:** Displays the Mustang in a 3D interactive environment.
+2. **Customization Panel:** Allows users to modify car attributes.
 
-### 🖼️ **6.2 Mockups**
-![UI Mockup](./assets/ui_mockup.png)
+### 🖼️ **6.2 Snapshots**
+| **Description** | **Screenshot**                      |
+|-----------------|------------------------------------|
+| User Interface  | ![Running App](docs/running_application.jpg) |
 
 ---
 
@@ -147,11 +122,17 @@ The system architecture consists of:
 | TC-002           | Select "Alloy A"   | Wheels update to "Alloy A"             | Pass              |
 | TC-003           | Generate Invoice   | PDF with correct details is downloaded | Pass              |
 
+### 📷 **Snapshots**
+| **Test Case**    | **Screenshot**                      |
+|------------------|------------------------------------|
+| TC-001           | ![Test Case 1](docs/tc1.jpg)       |
+| TC-002           | ![Test Case 2](docs/tc2.jpg)       |
+| TC-003           | ![Test Case 3](docs/tc3.jpg)       |
+
 ---
 
 ## Section 8 - Monitoring
 
-### 📊 **Key Metrics**
 - **Performance Metrics:** Average response time under 1 second.
 - **Error Metrics:** Logs for rendering or PDF generation issues.
 - **Availability Metrics:** Uptime monitored via browser-based tools.
@@ -192,3 +173,14 @@ The system architecture consists of:
 ---
 
 ### ✍️ **Author**: *Rishabh Karnani*
+
+---
+
+### **Final Steps**:
+1. **Upload all screenshots and docs to your GitHub repository's `docs/` folder.**
+2. Verify that all file paths (e.g., `./docs/architecture_diagram.jpg`) are correct.
+3. Commit and push the changes:
+   ```bash
+   git add docs/*
+   git commit -m "Added all screenshots, diagrams, and documentation updates"
+   git push origin main
