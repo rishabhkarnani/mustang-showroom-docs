@@ -1,4 +1,4 @@
-# ![Mustang Logo](./assets/logo.png) **Mustang Showroom Customization Platform**
+# **Mustang Showroom Customization Platform**
 
 ---
 
