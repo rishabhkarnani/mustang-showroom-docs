@@ -1,4 +1,4 @@
-# **Mustang Showroom Customization Platform**
+# **Mustang Showroom Customization**
 
 ---
 
